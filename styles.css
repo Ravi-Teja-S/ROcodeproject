@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page.hidden {
+    display: none;
+}
+
+#home-page {
+    display: block; /* Show first page by default */
+}
+#second-page {
+    display: none; /* Hide second page by default */
+}
+
+
+.mode-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button-icon {
+    width: 80px; /* Adjust the icon size */
+    height: 80px;
+}
+
+.hover-text {
+    position: absolute;
+    display: none; /* Hidden by default */
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1000; /* Ensure it stays on top */
+    pointer-events: none;
+}
+
+
+.search-section {
+    margin-top: 20px;
+}
+
+.search-section input {
+    padding: 10px;
+    font-size: 18px;
+    width: 60%;
+}
+
+.search-section button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
