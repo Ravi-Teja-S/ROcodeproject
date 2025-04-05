@@ -13,12 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Ravi-Teja-S/ROcodeproject/issues"
   },
   "homepage": "https://github.com/Ravi-Teja-S/ROcodeproject#readme",
   "dependencies": {
+    "@google/genai": "^0.7.0",
     "dotenv": "^16.4.7"
   }
 }

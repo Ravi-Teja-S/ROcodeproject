@@ -4,50 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahayak - Senior Citizen Companion</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
-    
     <!-- First Page -->
     <div id="home-page" class="page">
         <h1>Welcome to Sahayak</h1>
         <p>Sahayak is your AI-powered companion for senior citizens, offering information, wellness tips, religious discussions, and scheme assistance.</p>
-        <button id="info-button" onclick="navigateToSecondPage()">Information Mode</button>
+        <button onclick="navigateToSecondPage()">Enter Information Mode</button>
     </div>
-    
+
     <!-- Second Page -->
     <div id="second-page" class="page hidden">
         <h1>Select a Mode</h1>
         <div class="mode-buttons">
-            <button class="mode-btn" id="religious-mode">
+            <button class="mode-btn">
                 <img src="temple-icon.png" alt="Religious mode" class="button-icon">
-                <span class="hover-text" id="hover-text">Religious Mode</span>
+                <div class="hover-text">Religious Mode</div>
             </button>
-            
-            <button class="mode-btn" id="religious-mode">
-                <img src="meditating icon.png" alt="wellness mode" class="button-icon">
-                <span class="hover-text" id="hover-text">Welness mode</span>
+
+            <button class="mode-btn">
+                <img src="meditating icon.png" alt="Wellness mode" class="button-icon">
+                <div class="hover-text">Wellness Mode</div>
             </button>
-           
-            <button class="mode-btn" id="religious-mode">
-                <img src="piggy bank.png" alt="schemes mode" class="button-icon">
-                <span class="hover-text" id="hover-text">Schemes Mode</span>
+
+            <button class="mode-btn">
+                <img src="piggy bank.png" alt="Schemes mode" class="button-icon">
+                <div class="hover-text">Schemes Mode</div>
             </button>
-            <button class="mode-btn" id="religious-mode">
-                <img src="general mode.png" alt="wellness mode" class="button-icon">
-                <span class="hover-text" id="hover-text">General Mode</span>
+
+            <button class="mode-btn">
+                <img src="general mode.png" alt="General mode" class="button-icon">
+                <div class="hover-text">General Mode</div>
             </button>
+        </div>
         <div class="search-section">
             <input type="text" id="search-bar" placeholder="Ask a question...">
-            <button id="mic-button"><i class="icon-microphone"></i></button>
+            <button id="generate-button">Generate</button>
         </div>
+        <button onclick="navigateToHomePage()" style="margin-top: 20px;">Go Back</button>
     </div>
-    <button id="generate-button">Generate Text</button>
-    <div id="output"></div>
-    
-    <script src="script.js"></script>
-    <script src="gemini.js"></script>
 
+    <div id="output"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
