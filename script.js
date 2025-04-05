@@ -1,3 +1,4 @@
+
 function navigateToSecondPage() {
     // Ensure the elements exist and are being manipulated correctly
     const homePage = document.getElementById("home-page");
@@ -11,24 +12,20 @@ function navigateToSecondPage() {
     }
 }
 
-function addHoverEffect(buttonId, hoverTextId) {
-    const button = document.getElementById(buttonId);
-    const hoverText = document.getElementById(hoverTextId);
-
+// Add hover logic for all buttons
+document.querySelectorAll('.mode-btn').forEach(button => {
+    const hoverText = button.querySelector('.hover-text');
+    
     button.addEventListener('mousemove', (e) => {
         hoverText.style.display = 'block'; // Show hover text
-        hoverText.style.left = `${e.pageX + 5}px`; // Position it near the cursor
+        hoverText.style.left = `${e.pageX + 5}px`; // Position near cursor
         hoverText.style.top = `${e.pageY + 5}px`;
     });
 
     button.addEventListener('mouseleave', () => {
-        hoverText.style.display = 'none'; // Hide hover text when leaving
+        hoverText.style.display = 'none'; // Hide hover text
     });
-}
+});
 
-// Add hover effects for all buttons
-addHoverEffect('religious-mode', 'religious-hover');
-addHoverEffect('wellness-mode', 'wellness-hover');
-addHoverEffect('schemes-mode', 'schemes-hover');
-addHoverEffect('general-mode', 'general-hover');
+
 
