@@ -10,67 +10,63 @@ body {
     background-color: #e6f0e9;
     text-align: center;
 }
-.navbar {
-    background-color: #333;
-    overflow: hidden;
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #2d3e50;
+    
 }
 
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+nav ul {
+    float: left;
+   
 }
 
-.nav-links li {
+nav ul li {
+    float: left;
+    list-style: none;
     position: relative;
 }
-
-.nav-links li a,
-.dropbtn {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
+nav ul li:hover > ul {
     display: block;
-    background: none;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
 }
-
-.nav-links li a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #575757;
+nav ul li a {
+    display: block;
+    font-size: medium;
+    padding: 22px 14px;
+    text-decoration: none;
+    color: rgb(245, 232, 232);
 }
-
-.dropdown-content {
+/* Add this to your CSS */
+nav ul li a:hover {
+    background-color: #aaa; /* Grey highlight color */
+    color: white; /* Text color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #8c2d2d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: #2d3e50;
+    padding: 10px ;
+    border-radius: 0px 0px 4px 4px;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+nav ul li ul li {
+  width: 200px;
+  border-radius: 4px;
+  
+}
+nav ul li ul li a{
+    padding: 12px 14px;
+    display:block;
+    color:#fff
 }
 
-.dropdown-content a:hover {
-    background-color: #b94a4a;
-}
 
-.dropdown-content.show {
-    display: block;
+nav ul li ul li a:hover {
+    background-color: #aaa;
 }
-
-.dropdown:hover {
-    display: block;
-}
-
 .page {
     padding: 40px 20px;
 }
@@ -121,6 +117,7 @@ button:hover {
     border-radius: 10px;
     padding: 10px;
     width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,19 +133,13 @@ button:hover {
 }
 
 #second-page {
-    display: none;
-    flex-direction: column;
     min-height: 100vh;
-    justify-content: space-between;
-}
-
-#second-page.visible {
-    display: flex;
 }
 
 .button-icon {
     width: 60px;
     height: 60px;
+    object-fit: contain;
 }
 
 .hover-text {
@@ -156,11 +147,11 @@ button:hover {
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #e07474;
+    background-color: #317a44;
+    color: white;
     padding: 6px 12px;
     font-size: 14px;
     border-radius: 6px;
-    border: 1px solid #899c4e;
     display: none;
     white-space: nowrap;
     z-index: 1000;
@@ -176,7 +167,7 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 10px;
-    border-top: 1px solid #ccc;
+    margin-top: 20px;
 }
 
 .search-section input {
@@ -197,7 +188,15 @@ button:hover {
 }
 
 #output {
-    margin-top: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 800px;
+    min-height: 100px;
     font-size: 1.1em;
     color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: none;
+    text-align: left;
 }

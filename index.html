@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Explore</a>
+                <ul>
+                   <li><a href="#">Temple tourism</a></li>
+                   <li><a href="#">Government schemes</a></li>
+                    <li><a href="#">Order Swiggy/Zomato</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <!-- First Page -->
     <div id="home-page" class="page">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li class="dropdown">
-                    <button class="dropbtn" type="button">EXPLORE</button>
-                    <div class="dropdown-content">
-                        <a href="#">Temple tourism</a>
-                        <a href="#">Government schemes</a>
-                        <a href="#">Order Swiggy/Zomato</a>
-                    </div>
-                </li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+       
         <img src="senior citizen.png" >
         <h1>Welcome to Sahayak</h1>
         <p>Sahayak is your AI-powered companion for senior citizens, offering information, wellness tips, religious discussions, and scheme assistance.</p>
@@ -34,6 +35,7 @@
     <!-- Second Page -->
     <div id="second-page" class="page hidden">
         <h1>Select a Mode</h1>
+        
         <div class="mode-buttons">
             <button class="mode-btn">
                 <img src="temple-icon.png" alt="Religious mode" class="button-icon">
